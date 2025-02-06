@@ -1,0 +1,66 @@
+.event_popup {
+  //на каждый евент ставить координаты, анимацию появления/удаления и задержку
+  position: absolute;
+  min-width: 390px;
+  min-height: 120px;
+  padding: 32px 40px 10px;
+  border-radius: 20px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 700;
+  opacity: 0;
+  line-height: 120%;
+  color: #398feb;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url('@/assets/img/icons/star.svg') center / cover no-repeat;
+    position: absolute;
+    z-index: 3;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 5px;
+    background: #fff;
+  }
+
+  span {
+    font-size: 18px;
+    display: block;
+    margin: 18px 0 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #208b0a;
+  }
+
+  &.left {
+
+    animation: zoomInLeft 1s ease 0s 1 normal forwards;
+    background: url('@/assets/events/bg-2.svg') center / cover no-repeat;
+
+    &.out {
+      opacity: 1;
+      animation: zoomOutLeft 1s ease 0s 1 normal forwards;
+    }
+  }
+
+  &.right {
+    animation: zoomInRight 1s ease 0s 1 normal forwards;
+    background: url('@/assets/events/bg.svg') center / cover no-repeat;
+
+    &.out {
+      opacity: 1;
+      animation: zoomOutRight 1s ease 0s 1 normal forwards;
+    }
+  }
+}

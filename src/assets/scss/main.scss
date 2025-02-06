@@ -1,0 +1,65 @@
+@import "fonts";
+@import "variables";
+@import "null";
+@import "animate";
+@import "events_popup";
+@import "markers";
+#app {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: #234343;
+}
+
+.main {
+  padding: 60px 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: url("@/assets/img/bg_2.png") center / cover no-repeat;
+}
+
+.video {
+  flex: 1 1 auto;
+}
+
+.title {
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.footer {
+  position: relative;
+}
+
+.markers {
+  height: 100%;
+  position: relative;
+}
+
+.season-gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #234343;
+  z-index: 999999;
+  background: url("@/assets/img/bg_2.png") center / cover no-repeat;
+}
+
+.scaleIn {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.scaleInIn {
+  animation: scale-in-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}

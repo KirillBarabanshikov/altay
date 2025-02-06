@@ -1,0 +1,10 @@
+.marker {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: url('@/assets/img/icons/marker.svg');
+  animation: scale-in-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  &.winter {
+    background-image: url('@/assets/img/icons/marker-winter.svg');
+  }
+}
