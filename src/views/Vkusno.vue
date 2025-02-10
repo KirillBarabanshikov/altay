@@ -7,32 +7,27 @@
       :space-between="0"
       navigation
       centered-slides
-
     >
-      <swiper-slide
-        v-for="slide in list"
-        :key="slide.path"
-      >
-        <div :class="['content',{cls: slide.text}]">
+      <swiper-slide v-for="slide in list" :key="slide.path">
+        <div :class="['content', { cls: slide.text }]">
           <div class="img">
-            <img :src="slide.path" alt="">
+            <img :src="slide.path" alt="" />
           </div>
           <div v-if="slide.text" class="text" v-html="slide.text"></div>
         </div>
       </swiper-slide>
       <div class="close" @click="$emit('close')"></div>
     </swiper>
-    <Back @back="$router.go(-1)" bottom/>
+    <Back @back="$router.go(-1)" bottom />
   </div>
 </template>
 
 <script>
-import {Navigation} from 'swiper'
-import {Swiper, SwiperSlide} from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import { Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/navigation";
 import Back from "@/components/UI/Back.vue";
-
 
 export default {
   name: "Vkusno",
@@ -46,74 +41,71 @@ export default {
       modules: [Navigation],
       list: [
         {
-          path: require('@/assets/vkusno/gallery/1.jpg'),
-          text: 'Туризм на Алтае надолго запоминается вкусной натуральной едой из экологически чистых районов, изобилием меда и сыра, таёжных трав, ягод и грибов, мяса марала, хариуса, мраморной говядина, кедрового ореха, папоротника, облепихи - знаменитых брендовых продуктов.',
+          path: require("@/assets/vkusno/gallery/1.jpg"),
+          text: "Туризм на Алтае надолго запоминается вкусной натуральной едой из экологически чистых районов, изобилием меда и сыра, таёжных трав, ягод и грибов, мяса марала, хариуса, мраморной говядина, кедрового ореха, папоротника, облепихи - знаменитых брендовых продуктов.",
         },
         {
-          path: require('@/assets/vkusno/gallery/2.jpg'),
-          text: 'Алтайский край занимает лидирующие позиции в сфере производства <span>сыров и масла</span>: каждая седьмая тонна сыра в стране производится в нашем регионе.',
+          path: require("@/assets/vkusno/gallery/2.jpg"),
+          text: "Алтайский край занимает лидирующие позиции в сфере производства <span>сыров и масла</span>: каждая седьмая тонна сыра в стране производится в нашем регионе.",
         },
         {
-          path: require('@/assets/vkusno/gallery/3.jpg'),
-          text: '<span>Алтайский мёд</span> – это бренд, известный в России и за её пределами. Секрет его ценности заключается в природе региона, где поля чередуются с лугами, а горные районы соседствуют с тайгой, где произрастают редкие типы растений-медоносов.',
+          path: require("@/assets/vkusno/gallery/3.jpg"),
+          text: "<span>Алтайский мёд</span> – это бренд, известный в России и за её пределами. Секрет его ценности заключается в природе региона, где поля чередуются с лугами, а горные районы соседствуют с тайгой, где произрастают редкие типы растений-медоносов.",
         },
         {
-          path: require('@/assets/vkusno/gallery/4.jpg'),
-          text: 'В Алтайском крае во всем многообразии произрастают травы и дикоросы, из которых делают <span>фиточаи и травяные сборы.</span>',
-
+          path: require("@/assets/vkusno/gallery/4.jpg"),
+          text: "В Алтайском крае во всем многообразии произрастают травы и дикоросы, из которых делают <span>фиточаи и травяные сборы.</span>",
         },
         {
-          path: require('@/assets/vkusno/gallery/5.jpg'),
-          text: 'В регионе находятся десятки мараловодческих хозяйств, и именно здесь сконцентрировано производство <span>лечебной продукции из пантов</span> – рогов оленей. С древности их использовали в качестве универсального лечебного, омолаживающего и тонизирующего средства. Панты алтайского марала обладают потрясающими лечебными свойствами – равных им по набору микроэлементов и лечебному воздействию нет нигде в мире.',
+          path: require("@/assets/vkusno/gallery/5.jpg"),
+          text: "В регионе находятся десятки мараловодческих хозяйств, и именно здесь сконцентрировано производство <span>лечебной продукции из пантов</span> – рогов оленей. С древности их использовали в качестве универсального лечебного, омолаживающего и тонизирующего средства. Панты алтайского марала обладают потрясающими лечебными свойствами – равных им по набору микроэлементов и лечебному воздействию нет нигде в мире.",
         },
         {
-          path: require('@/assets/vkusno/gallery/6.jpg'),
-          text: '<span>Гастрономический туризм</span> – одно из перспективных направлений в Алтайском крае. Региональная команда шеф-поваров вошла в федеральный проект «Гастрономическая карта России» и удивляет гостей края особенностями аутентичной кухни на гастрономических фестивалях.',
+          path: require("@/assets/vkusno/gallery/6.jpg"),
+          text: "<span>Гастрономический туризм</span> – одно из перспективных направлений в Алтайском крае. Региональная команда шеф-поваров вошла в федеральный проект «Гастрономическая карта России» и удивляет гостей края особенностями аутентичной кухни на гастрономических фестивалях.",
         },
         {
-          path: require('@/assets/vkusno/gallery/7.jpg'),
+          path: require("@/assets/vkusno/gallery/7.jpg"),
         },
         {
-          path: require('@/assets/vkusno/gallery/8.jpg'),
+          path: require("@/assets/vkusno/gallery/8.jpg"),
         },
         {
-          path: require('@/assets/vkusno/gallery/9.jpg'),
+          path: require("@/assets/vkusno/gallery/9.jpg"),
         },
         {
-          path: require('@/assets/vkusno/gallery/10.jpg'),
+          path: require("@/assets/vkusno/gallery/10.jpg"),
         },
         {
-          path: require('@/assets/vkusno/gallery/11.jpg'),
+          path: require("@/assets/vkusno/gallery/11.jpg"),
         },
         {
-          path: require('@/assets/vkusno/gallery/12.jpg'),
+          path: require("@/assets/vkusno/gallery/12.jpg"),
         },
         {
-          path: require('@/assets/vkusno/gallery/13.jpg'),
+          path: require("@/assets/vkusno/gallery/13.jpg"),
         },
         {
-          path: require('@/assets/vkusno/gallery/14.jpg'),
+          path: require("@/assets/vkusno/gallery/14.jpg"),
         },
         {
-          path: require('@/assets/vkusno/gallery/15.jpg'),
+          path: require("@/assets/vkusno/gallery/15.jpg"),
         },
         {
-          path: require('@/assets/vkusno/gallery/16.jpg'),
+          path: require("@/assets/vkusno/gallery/16.jpg"),
         },
         {
-          path: require('@/assets/vkusno/gallery/17.jpg'),
+          path: require("@/assets/vkusno/gallery/17.jpg"),
         },
-
       ],
-    }
-
-  }
-}
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .main {
-  background: url('@/assets/vkusno/bg.svg');
+  background: url("@/assets/vkusno/bg.svg");
 }
 
 .vkusno {
@@ -126,7 +118,7 @@ export default {
   line-height: 48px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #3AAACD;
+  color: #3aaacd;
   padding: 37px 160px;
   background: #fff;
   border-radius: 119px;
@@ -158,20 +150,19 @@ export default {
 
 ::v-deep(.swiper-button-next) {
   right: 0;
-  background: url('@/assets/img/icons/right.svg');
+  background: url("@/assets/img/icons/right.svg");
 
   &:after {
-    content: '';
-
+    content: "";
   }
 }
 
 ::v-deep(.swiper-button-prev) {
   left: 0;
-  background: url('@/assets/img/icons/left.svg');
+  background: url("@/assets/img/icons/left.svg");
 
   &:after {
-    content: '';
+    content: "";
   }
 }
 
@@ -179,7 +170,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   .content {
     position: relative;
@@ -207,10 +197,7 @@ export default {
         }
       }
     }
-
-
   }
-
 
   .img {
     display: block;
@@ -223,7 +210,7 @@ export default {
     overflow: hidden;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 100%;
@@ -232,7 +219,6 @@ export default {
       z-index: 2;
     }
 
-
     img {
       width: 100%;
       height: 100%;
@@ -240,7 +226,6 @@ export default {
       object-fit: cover;
       overflow: hidden;
       border-radius: 10px 10px 0 0;
-
     }
   }
 
@@ -257,7 +242,7 @@ export default {
 
     ::v-deep(span) {
       font-weight: 700;
-      color: #3AAACD;
+      color: #3aaacd;
     }
   }
 }

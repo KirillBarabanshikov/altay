@@ -1,4 +1,4 @@
-import {createStore} from 'vuex'
+import { createStore } from "vuex";
 import router from "@/router";
 
 export default createStore({
@@ -6,7 +6,7 @@ export default createStore({
     events: 1,
   },
   getters: {
-    events: (state) => state.events
+    events: (state) => state.events,
   },
   mutations: {
     setEvents(state, num) {
@@ -16,8 +16,7 @@ export default createStore({
       router.go(-1);
       state.events = 2;
     },
-
   },
   actions: {},
-  modules: {}
-})
+  modules: {},
+});

@@ -2,18 +2,18 @@
   <div class="main">
     <div v-if="!show" class="grid">
       <div @click="show = true" class="item scaleIn">
-        <img src="@/assets/complex/dashboard/1.png" alt="">
+        <img src="@/assets/complex/dashboard/1.png" alt="" />
       </div>
-      <div @click="$router.push({name: 'sanatoriums'})" class="item scaleIn">
-        <img src="@/assets/complex/dashboard/2.png" alt="">
+      <div @click="$router.push({ name: 'sanatoriums' })" class="item scaleIn">
+        <img src="@/assets/complex/dashboard/2.png" alt="" />
       </div>
     </div>
     <transition name="fade">
       <div v-if="show" class="season-gallery">
-        <Gallery @close="show = false" :list="list"/>
+        <Gallery @close="show = false" :list="list" />
       </div>
     </transition>
-    <Back @back="$router.go(-1)" bottom/>
+    <Back @back="$router.go(-1)" bottom />
   </div>
 </template>
 
@@ -23,23 +23,23 @@ import Gallery from "@/components/Gallery.vue";
 
 export default {
   name: "ComplexDashboard",
-  components: {Gallery, Back},
+  components: { Gallery, Back },
   data() {
     return {
       show: false,
       list: [
         {
           id: 1,
-          path: require('@/assets/complex/buklet/1.jpeg')
+          path: require("@/assets/complex/buklet/1.jpeg"),
         },
         {
           id: 2,
-          path: require('@/assets/complex/buklet/2.jpeg')
+          path: require("@/assets/complex/buklet/2.jpeg"),
         },
-      ]
-    }
-  }
-}
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -62,6 +62,5 @@ export default {
     width: 100%;
     height: 100%;
   }
-
 }
 </style>

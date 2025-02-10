@@ -5,34 +5,40 @@
         <div v-if="month === 1" class="markers one">
           <div
             @click="openGallery('zimovka')"
-            :class="['event_popup left', {out: out}]"
+            :class="['event_popup left', { out: out }]"
           >
-            Праздник <br> «Алтайская зимовка»
+            Праздник <br />
+            «Алтайская зимовка»
             <span>30 ноября 2024</span>
           </div>
-
         </div>
         <div v-else-if="month === 2" class="markers two">
           <div
             @click="openGallery('maslenica')"
-            :class="['event_popup right', {out: out}]"
+            :class="['event_popup right', { out: out }]"
           >
-            Фестиваль <br> «Сибирская масленица»
+            Фестиваль <br />
+            «Сибирская масленица»
             <span>25 февраля 2023</span>
           </div>
         </div>
         <div v-else-if="!month" class="markers points">
-<!--          <div class="marker winter"></div>-->
+          <!--          <div class="marker winter"></div>-->
           <div class="marker winter"></div>
         </div>
       </transition>
     </div>
     <div class="footer">
-      <Nav :events-list="eventsList" @back="back" @changeMonth="changeMonth" one/>
+      <Nav
+        :events-list="eventsList"
+        @back="back"
+        @changeMonth="changeMonth"
+        one
+      />
     </div>
     <transition name="fade">
       <div v-if="show" class="season-gallery">
-        <GalleryEvents @close="show = false" :list="list" cover/>
+        <GalleryEvents @close="show = false" :list="list" cover />
       </div>
     </transition>
   </div>
@@ -40,14 +46,14 @@
 
 <script>
 import Back from "@/components/UI/Back.vue";
-import {mapMutations} from "vuex";
+import { mapMutations } from "vuex";
 import Gallery from "@/components/Gallery.vue";
 import Nav from "@/components/SeasonsNav/Nav.vue";
 import GalleryEvents from "@/components/GalleryEvents.vue";
 
 export default {
   name: "Winter",
-  components: {GalleryEvents, Nav, Gallery, Back},
+  components: { GalleryEvents, Nav, Gallery, Back },
   data() {
     return {
       out: false,
@@ -57,227 +63,226 @@ export default {
         zimovka: [
           {
             id: 1,
-            path: require('@/assets/events/winter/zimovka/1.jpg'),
+            path: require("@/assets/events/winter/zimovka/1.jpg"),
             content: {
-              title: 'Фестиваль «Алтайская зимовка»',
-              text: 'Первый фестиваль настоящей сибирской зимы. Открывает зимний туристический сезон в Алтайском крае и приурочен к прилету лебедей на незамерзающие озера Алтая.<br>' +
-                'Народные гуляния, зимние виды отдыха, выставка-ярмарка, большая экскурсионная программа.<br>' +
-                'Прекрасная возможность начать зиму тепло, интересно и весело, в компании друзей или семьей.',
-              where: 'Алтайский край',
-              when: '30 ноября 2024 года',
-              link: 'алтайскаязимовка.рф'
-            }
+              title: "Фестиваль «Алтайская зимовка»",
+              text:
+                "Первый фестиваль настоящей сибирской зимы. Открывает зимний туристический сезон в Алтайском крае и приурочен к прилету лебедей на незамерзающие озера Алтая.<br>" +
+                "Народные гуляния, зимние виды отдыха, выставка-ярмарка, большая экскурсионная программа.<br>" +
+                "Прекрасная возможность начать зиму тепло, интересно и весело, в компании друзей или семьей.",
+              where: "Алтайский край",
+              when: "30 ноября 2024 года",
+              link: "алтайскаязимовка.рф",
+            },
           },
           {
             id: 2,
-            path: require('@/assets/events/winter/zimovka/2.jpg'),
+            path: require("@/assets/events/winter/zimovka/2.jpg"),
           },
           {
             id: 3,
-            path: require('@/assets/events/winter/zimovka/3.jpg'),
+            path: require("@/assets/events/winter/zimovka/3.jpg"),
           },
           {
             id: 4,
-            path: require('@/assets/events/winter/zimovka/4.jpg'),
+            path: require("@/assets/events/winter/zimovka/4.jpg"),
           },
           {
             id: 5,
-            path: require('@/assets/events/winter/zimovka/5.jpg'),
+            path: require("@/assets/events/winter/zimovka/5.jpg"),
           },
           {
             id: 6,
-            path: require('@/assets/events/winter/zimovka/6.jpg'),
+            path: require("@/assets/events/winter/zimovka/6.jpg"),
           },
           {
             id: 7,
-            path: require('@/assets/events/winter/zimovka/7.jpg'),
+            path: require("@/assets/events/winter/zimovka/7.jpg"),
           },
           {
             id: 8,
-            path: require('@/assets/events/winter/zimovka/8.jpg'),
+            path: require("@/assets/events/winter/zimovka/8.jpg"),
           },
           {
             id: 9,
-            path: require('@/assets/events/winter/zimovka/9.jpg'),
+            path: require("@/assets/events/winter/zimovka/9.jpg"),
           },
           {
             id: 10,
-            path: require('@/assets/events/winter/zimovka/10.jpg'),
+            path: require("@/assets/events/winter/zimovka/10.jpg"),
           },
           {
             id: 11,
-            path: require('@/assets/events/winter/zimovka/11.jpg'),
+            path: require("@/assets/events/winter/zimovka/11.jpg"),
           },
           {
             id: 12,
-            path: require('@/assets/events/winter/zimovka/12.jpg'),
+            path: require("@/assets/events/winter/zimovka/12.jpg"),
           },
           {
             id: 13,
-            path: require('@/assets/events/winter/zimovka/13.jpg'),
+            path: require("@/assets/events/winter/zimovka/13.jpg"),
           },
           {
             id: 14,
-            path: require('@/assets/events/winter/zimovka/14.jpg'),
+            path: require("@/assets/events/winter/zimovka/14.jpg"),
           },
           {
             id: 15,
-            path: require('@/assets/events/winter/zimovka/15.jpg'),
+            path: require("@/assets/events/winter/zimovka/15.jpg"),
           },
           {
             id: 16,
-            path: require('@/assets/events/winter/zimovka/16.jpg'),
+            path: require("@/assets/events/winter/zimovka/16.jpg"),
           },
           {
             id: 17,
-            path: require('@/assets/events/winter/zimovka/17.jpg'),
+            path: require("@/assets/events/winter/zimovka/17.jpg"),
           },
           {
             id: 18,
-            path: require('@/assets/events/winter/zimovka/18.jpg'),
+            path: require("@/assets/events/winter/zimovka/18.jpg"),
           },
           {
             id: 19,
-            path: require('@/assets/events/winter/zimovka/19.jpg'),
+            path: require("@/assets/events/winter/zimovka/19.jpg"),
           },
           {
             id: 20,
-            path: require('@/assets/events/winter/zimovka/20.jpg'),
+            path: require("@/assets/events/winter/zimovka/20.jpg"),
           },
           {
             id: 21,
-            path: require('@/assets/events/winter/zimovka/21.jpg'),
+            path: require("@/assets/events/winter/zimovka/21.jpg"),
           },
           {
             id: 22,
-            path: require('@/assets/events/winter/zimovka/22.jpg'),
+            path: require("@/assets/events/winter/zimovka/22.jpg"),
           },
           {
             id: 23,
-            path: require('@/assets/events/winter/zimovka/23.jpg'),
+            path: require("@/assets/events/winter/zimovka/23.jpg"),
           },
           {
             id: 24,
-            path: require('@/assets/events/winter/zimovka/24.jpg'),
+            path: require("@/assets/events/winter/zimovka/24.jpg"),
           },
           {
             id: 25,
-            path: require('@/assets/events/winter/zimovka/25.jpg'),
+            path: require("@/assets/events/winter/zimovka/25.jpg"),
           },
           {
             id: 26,
-            path: require('@/assets/events/winter/zimovka/26.jpg'),
+            path: require("@/assets/events/winter/zimovka/26.jpg"),
           },
           {
             id: 27,
-            path: require('@/assets/events/winter/zimovka/27.jpg'),
+            path: require("@/assets/events/winter/zimovka/27.jpg"),
           },
-
         ],
-        maslenica: [
-          {
-            id: 1,
-            path: require('@/assets/events/winter/maslenica/1.jpg'),
-            content: {
-              title: 'Фестиваль  «Сибирская масленица» ',
-              text: 'Большой народный праздник  ежегодно собирает тысячи туристов. Богатая ярмарка радует гостей горячими угощениями, вкусными напитками и подарками ручной работы. Калейдоскоп спортивных состязаний, конкурсов и масленичных забав: народные масленичные гуляния, творческие конкурсы, ярмарка, конноспортивный праздник, сжигание Масленицы и большой масленичный хоровод вокруг костра, катание на русских тройках.',
-              where: 'ТРК «Сибирское подворье», с. Новотырышкино, Смоленский район',
-              when: ' 25 февраля 2023 года',
-              link: 'www.siberianmas.ru'
-            }
-          },
-          {
-            id: 2,
-            path: require('@/assets/events/winter/maslenica/2.jpg'),
-          },
-          {
-            id: 3,
-            path: require('@/assets/events/winter/maslenica/3.jpg'),
-          },
-          {
-            id: 4,
-            path: require('@/assets/events/winter/maslenica/4.jpg'),
-          },
-          {
-            id: 5,
-            path: require('@/assets/events/winter/maslenica/5.jpg'),
-          },
-          {
-            id: 6,
-            path: require('@/assets/events/winter/maslenica/6.jpg'),
-          },
-          {
-            id: 7,
-            path: require('@/assets/events/winter/maslenica/7.jpg'),
-          },
-          {
-            id: 8,
-            path: require('@/assets/events/winter/maslenica/8.jpg'),
-          },
-          {
-            id: 9,
-            path: require('@/assets/events/winter/maslenica/9.jpg'),
-          },
-          {
-            id: 10,
-            path: require('@/assets/events/winter/maslenica/10.jpg'),
-          },
-          {
-            id: 11,
-            path: require('@/assets/events/winter/maslenica/11.jpg'),
-          },
-          {
-            id: 12,
-            path: require('@/assets/events/winter/maslenica/12.jpg'),
-          },
-
-        ],
+        // maslenica: [
+        //   {
+        //     id: 1,
+        //     path: require("@/assets/events/winter/maslenica/1.jpg"),
+        //     content: {
+        //       title: "Фестиваль  «Сибирская масленица» ",
+        //       text: "Большой народный праздник  ежегодно собирает тысячи туристов. Богатая ярмарка радует гостей горячими угощениями, вкусными напитками и подарками ручной работы. Калейдоскоп спортивных состязаний, конкурсов и масленичных забав: народные масленичные гуляния, творческие конкурсы, ярмарка, конноспортивный праздник, сжигание Масленицы и большой масленичный хоровод вокруг костра, катание на русских тройках.",
+        //       where:
+        //         "ТРК «Сибирское подворье», с. Новотырышкино, Смоленский район",
+        //       when: " 25 февраля 2023 года",
+        //       link: "www.siberianmas.ru",
+        //     },
+        //   },
+        //   {
+        //     id: 2,
+        //     path: require("@/assets/events/winter/maslenica/2.jpg"),
+        //   },
+        //   {
+        //     id: 3,
+        //     path: require("@/assets/events/winter/maslenica/3.jpg"),
+        //   },
+        //   {
+        //     id: 4,
+        //     path: require("@/assets/events/winter/maslenica/4.jpg"),
+        //   },
+        //   {
+        //     id: 5,
+        //     path: require("@/assets/events/winter/maslenica/5.jpg"),
+        //   },
+        //   {
+        //     id: 6,
+        //     path: require("@/assets/events/winter/maslenica/6.jpg"),
+        //   },
+        //   {
+        //     id: 7,
+        //     path: require("@/assets/events/winter/maslenica/7.jpg"),
+        //   },
+        //   {
+        //     id: 8,
+        //     path: require("@/assets/events/winter/maslenica/8.jpg"),
+        //   },
+        //   {
+        //     id: 9,
+        //     path: require("@/assets/events/winter/maslenica/9.jpg"),
+        //   },
+        //   {
+        //     id: 10,
+        //     path: require("@/assets/events/winter/maslenica/10.jpg"),
+        //   },
+        //   {
+        //     id: 11,
+        //     path: require("@/assets/events/winter/maslenica/11.jpg"),
+        //   },
+        //   {
+        //     id: 12,
+        //     path: require("@/assets/events/winter/maslenica/12.jpg"),
+        //   },
+        // ],
       },
       list: [],
       eventsList: [
         {
           id: 1,
-          title: 'Декабрь',
+          title: "Декабрь",
         },
         // {
         //   id: 2,
         //   title: 'Февраль',
         // },
-      ]
-    }
+      ],
+    };
   },
   methods: {
     back() {
       this.out = true;
       setTimeout(() => {
-        this.backFromSeason()
-      }, 400)
+        this.backFromSeason();
+      }, 400);
     },
     changeMonth(id) {
       if (this.month) {
         this.out = true;
         setTimeout(() => {
           this.out = false;
-          this.month = id
-        }, 200)
+          this.month = id;
+        }, 200);
       } else {
-        this.month = id
+        this.month = id;
       }
     },
     openGallery(name) {
-      this.list = this.allPhotos[name]
+      this.list = this.allPhotos[name];
 
       this.show = true;
     },
-    ...mapMutations(['backFromSeason'])
+    ...mapMutations(["backFromSeason"]),
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-
 .main {
-  background: url('@/assets/img/seasons/winter.png') center / cover no-repeat;
+  background: url("@/assets/img/seasons/winter.png") center / cover no-repeat;
   position: relative;
 }
 
@@ -289,11 +294,11 @@ export default {
   }
 
   &.left {
-    background: url('@/assets/events/winter-1.svg') center / cover no-repeat;
+    background: url("@/assets/events/winter-1.svg") center / cover no-repeat;
   }
 
   &.right {
-    background: url('@/assets/events/winter-2.svg') center / cover no-repeat;
+    background: url("@/assets/events/winter-2.svg") center / cover no-repeat;
   }
 }
 
@@ -314,7 +319,8 @@ export default {
     top: 300px;
 
     &:before {
-      background: url('@/assets/img/icons/star-winter.svg') center / cover no-repeat;
+      background: url("@/assets/img/icons/star-winter.svg") center / cover
+        no-repeat;
       bottom: -139px;
       right: -30px;
     }

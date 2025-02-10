@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue";
 import Winter from "@/views/Seasons/Winter.vue";
 import Spring from "@/views/Seasons/Spring.vue";
@@ -18,91 +18,90 @@ import Sanatoriums from "@/views/Complex/Sanatoriums.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'screen',
-    component: Screen
+    path: "/",
+    name: "screen",
+    component: Screen,
   },
   {
-    path: '/home',
-    name: 'home',
-    component: Home
+    path: "/home",
+    name: "home",
+    component: Home,
   },
   {
-    path: '/winter',
-    name: 'winter',
-    component: Winter
+    path: "/winter",
+    name: "winter",
+    component: Winter,
   },
   {
-    path: '/spring',
-    name: 'spring',
-    component: Spring
+    path: "/spring",
+    name: "spring",
+    component: Spring,
   },
   {
-    path: '/summer',
-    name: 'summer',
-    component: Summer
+    path: "/summer",
+    name: "summer",
+    component: Summer,
   },
   {
-    path: '/autumn',
-    name: 'autumn',
-    component: Autumn
+    path: "/autumn",
+    name: "autumn",
+    component: Autumn,
   },
   {
-    path: '/tract',
-    name: 'tract',
-    component: Tract
+    path: "/tract",
+    name: "tract",
+    component: Tract,
   },
   {
-    path: '/information',
-    name: 'information',
-    component: Information
+    path: "/information",
+    name: "information",
+    component: Information,
   },
   {
-    path: '/best',
-    name: 'best',
-    component: Best
+    path: "/best",
+    name: "best",
+    component: Best,
   },
   {
-    path: '/video',
-    name: 'video',
-    component: Video
+    path: "/video",
+    name: "video",
+    component: Video,
   },
   {
-    path: '/history',
-    name: 'history',
-    component: History
+    path: "/history",
+    name: "history",
+    component: History,
   },
   {
-    path: '/routes',
-    name: 'routes',
-    component: Routes
+    path: "/routes",
+    name: "routes",
+    component: Routes,
   },
   {
-    path: '/complex',
-    name: 'complex',
+    path: "/complex",
+    name: "complex",
     component: ComplexVideo,
   },
   {
-    path: '/complex_dashboard',
-    name: 'complex_dashboard',
+    path: "/complex_dashboard",
+    name: "complex_dashboard",
     component: ComplexDashboard,
   },
   {
-    path: '/sanatoriums',
-    name: 'sanatoriums',
+    path: "/sanatoriums",
+    name: "sanatoriums",
     component: Sanatoriums,
   },
   {
-    path: '/vkusno',
-    name: 'vkusno',
+    path: "/vkusno",
+    name: "vkusno",
     component: Vkusno,
   },
-
-]
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
