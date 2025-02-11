@@ -1,32 +1,42 @@
 <template>
   <div class="main">
-    <div v-if="!show && !showVideo" class="grid">
-      <div @click="openVideo('mountains')" class="item scaleIn">
-        <img src="@/assets/best/banners/mountains.png" alt="" />
+    <div v-if="!show && !showVideo">
+      <div class="grid-half">
+        <div @click="openVideo('mountains')" class="item scaleIn">
+          <img src="@/assets/best/banners/mountains.png" alt="" />
+        </div>
+        <div @click="openVideo('photo')" class="item scaleIn">
+          <img src="@/assets/best/banners/photo.png" alt="" />
+        </div>
+        <div @click="openGallery('barnaul')" class="item scaleIn">
+          <img src="@/assets/best/banners/barnaul.jpeg" alt="" />
+        </div>
       </div>
-      <div @click="openVideo('photo')" class="item scaleIn">
-        <img src="@/assets/best/banners/photo.png" alt="" />
-      </div>
-      <div @click="openGallery('barnaul')" class="item scaleIn">
-        <img src="@/assets/best/banners/barnaul.jpeg" alt="" />
-      </div>
-      <div @click="openGallery('belokurikha')" class="item scaleIn">
-        <img src="@/assets/best/banners/belokurikha.jpeg" alt="" />
-      </div>
-      <div @click="openGallery('souvenirs')" class="item scaleIn">
-        <img src="@/assets/best/banners/souvenirs.jpeg" alt="" />
-      </div>
-      <div @click="openGallery('active')" class="item scaleIn">
-        <img src="@/assets/best/banners/0.jpeg" alt="" />
-      </div>
-      <div @click="openGallery('eco')" class="item scaleIn">
-        <img src="@/assets/best/banners/1.jpeg" alt="" />
-      </div>
-      <div @click="openGallery('ozero')" class="item scaleIn">
-        <img src="@/assets/best/ozero/0.jpeg" alt="" />
-      </div>
-      <div @click="openGallery('derev')" class="item scaleIn">
-        <img src="@/assets/best/derev/0.jpeg" alt="" />
+      <div class="grid">
+        <div @click="openGallery('belokurikha')" class="item scaleIn">
+          <img src="@/assets/best/banners/belokurikha.jpeg" alt="" />
+        </div>
+        <div @click="openGallery('souvenirs')" class="item scaleIn">
+          <img src="@/assets/best/banners/souvenirs.jpeg" alt="" />
+        </div>
+        <div @click="openGallery('active')" class="item scaleIn">
+          <img src="@/assets/best/banners/0.jpeg" alt="" />
+        </div>
+        <div @click="openGallery('eco')" class="item scaleIn">
+          <img src="@/assets/best/banners/1.jpeg" alt="" />
+        </div>
+        <div @click="openGallery('ozero')" class="item scaleIn">
+          <img src="@/assets/best/ozero/0.jpeg" alt="" />
+        </div>
+        <div @click="openGallery('derev')" class="item scaleIn">
+          <img src="@/assets/best/derev/0.jpeg" alt="" />
+        </div>
+        <div @click="openGallery('bisk')" class="item scaleIn">
+          <img src="@/assets/best/bisk/1.jpg" alt="" />
+        </div>
+        <div @click="openGallery('katuni')" class="item scaleIn">
+          <img src="@/assets/best/katuni/1.jpg" alt="" />
+        </div>
       </div>
     </div>
     <transition name="fade">
@@ -57,6 +67,202 @@ export default {
       show: false,
       list: [],
       allPhotos: {
+        katuni: [
+          {
+            id: 1,
+            path: require("@/assets/best/katuni/1.jpg"),
+          },
+          {
+            id: 2,
+            path: require("@/assets/best/katuni/2.jpg"),
+          },
+          {
+            id: 3,
+            path: require("@/assets/best/katuni/3.jpg"),
+          },
+          {
+            id: 4,
+            path: require("@/assets/best/katuni/4.jpg"),
+          },
+          {
+            id: 5,
+            path: require("@/assets/best/katuni/5.jpg"),
+          },
+          {
+            id: 6,
+            path: require("@/assets/best/katuni/6.jpg"),
+          },
+          {
+            id: 7,
+            path: require("@/assets/best/katuni/7.jpg"),
+          },
+          {
+            id: 8,
+            path: require("@/assets/best/katuni/8.jpg"),
+          },
+          {
+            id: 9,
+            path: require("@/assets/best/katuni/9.jpg"),
+          },
+          {
+            id: 10,
+            path: require("@/assets/best/katuni/10.jpg"),
+          },
+          {
+            id: 11,
+            path: require("@/assets/best/katuni/11.jpg"),
+          },
+          {
+            id: 12,
+            path: require("@/assets/best/katuni/12.jpg"),
+          },
+          {
+            id: 13,
+            path: require("@/assets/best/katuni/13.jpg"),
+          },
+          {
+            id: 14,
+            path: require("@/assets/best/katuni/14.jpg"),
+          },
+          {
+            id: 15,
+            path: require("@/assets/best/katuni/15.jpg"),
+          },
+          {
+            id: 16,
+            path: require("@/assets/best/katuni/16.jpg"),
+          },
+          {
+            id: 17,
+            path: require("@/assets/best/katuni/17.jpg"),
+          },
+          {
+            id: 18,
+            path: require("@/assets/best/katuni/18.jpg"),
+          },
+          {
+            id: 19,
+            path: require("@/assets/best/katuni/19.jpg"),
+          },
+          {
+            id: 20,
+            path: require("@/assets/best/katuni/20.jpg"),
+          },
+          {
+            id: 21,
+            path: require("@/assets/best/katuni/21.jpg"),
+          },
+          {
+            id: 22,
+            path: require("@/assets/best/katuni/22.jpg"),
+          },
+          {
+            id: 23,
+            path: require("@/assets/best/katuni/23.jpg"),
+          },
+          {
+            id: 24,
+            path: require("@/assets/best/katuni/24.jpg"),
+          },
+        ],
+        bisk: [
+          {
+            id: 1,
+            path: require("@/assets/best/bisk/1.jpg"),
+          },
+          {
+            id: 2,
+            path: require("@/assets/best/bisk/2.jpg"),
+          },
+          {
+            id: 3,
+            path: require("@/assets/best/bisk/3.jpg"),
+          },
+          {
+            id: 4,
+            path: require("@/assets/best/bisk/4.jpg"),
+          },
+          {
+            id: 5,
+            path: require("@/assets/best/bisk/5.jpg"),
+          },
+          {
+            id: 6,
+            path: require("@/assets/best/bisk/6.jpg"),
+          },
+          {
+            id: 7,
+            path: require("@/assets/best/bisk/7.jpg"),
+          },
+          {
+            id: 8,
+            path: require("@/assets/best/bisk/8.jpg"),
+          },
+          {
+            id: 9,
+            path: require("@/assets/best/bisk/9.jpg"),
+          },
+          {
+            id: 10,
+            path: require("@/assets/best/bisk/10.jpg"),
+          },
+          {
+            id: 11,
+            path: require("@/assets/best/bisk/11.jpg"),
+          },
+          {
+            id: 12,
+            path: require("@/assets/best/bisk/12.jpg"),
+          },
+          {
+            id: 13,
+            path: require("@/assets/best/bisk/13.jpg"),
+          },
+          {
+            id: 14,
+            path: require("@/assets/best/bisk/14.jpg"),
+          },
+          {
+            id: 15,
+            path: require("@/assets/best/bisk/15.jpg"),
+          },
+          {
+            id: 16,
+            path: require("@/assets/best/bisk/16.jpg"),
+          },
+          {
+            id: 17,
+            path: require("@/assets/best/bisk/17.jpg"),
+          },
+          {
+            id: 18,
+            path: require("@/assets/best/bisk/18.jpg"),
+          },
+          {
+            id: 19,
+            path: require("@/assets/best/bisk/19.jpg"),
+          },
+          {
+            id: 20,
+            path: require("@/assets/best/bisk/20.jpg"),
+          },
+          {
+            id: 21,
+            path: require("@/assets/best/bisk/21.jpg"),
+          },
+          {
+            id: 22,
+            path: require("@/assets/best/bisk/22.jpg"),
+          },
+          {
+            id: 23,
+            path: require("@/assets/best/bisk/23.jpg"),
+          },
+          {
+            id: 24,
+            path: require("@/assets/best/bisk/24.jpg"),
+          },
+        ],
         active: [
           {
             id: 0,
@@ -516,18 +722,23 @@ export default {
   background: url("@/assets/img/bg_2.png") center / cover no-repeat;
 }
 
-.grid {
+.grid-half {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin: auto 0;
+  gap: 24px;
+  margin: 0 auto 19px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 283px);
+  justify-content: center;
+  gap: 19px;
 }
 
 .item {
-  width: 340px;
-  height: 340px;
+  width: 283px;
+  height: 283px;
   position: relative;
 
   img {

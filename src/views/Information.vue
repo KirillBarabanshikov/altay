@@ -50,6 +50,10 @@ export default {
       allPhotos: {
         all: [
           {
+            id: 24,
+            path: require("@/assets/information/all/24.jpeg"),
+          },
+          {
             id: 1,
             path: require("@/assets/information/all/1.jpeg"),
           },
@@ -140,10 +144,6 @@ export default {
           {
             id: 23,
             path: require("@/assets/information/all/23.jpeg"),
-          },
-          {
-            id: 24,
-            path: require("@/assets/information/all/24.jpeg"),
           },
         ],
         map: [

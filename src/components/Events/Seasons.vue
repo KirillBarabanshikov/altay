@@ -32,8 +32,8 @@ export default {
       show: false,
       list: [
         {
-          id: 44,
-          path: require("@/assets/events/results/44.jpeg"),
+          id: 0,
+          path: require("@/assets/events/results/0.jpeg"),
         },
         {
           id: 1,
@@ -190,22 +190,6 @@ export default {
         {
           id: 39,
           path: require("@/assets/events/results/39.jpeg"),
-        },
-        {
-          id: 40,
-          path: require("@/assets/events/results/40.jpeg"),
-        },
-        {
-          id: 41,
-          path: require("@/assets/events/results/41.jpeg"),
-        },
-        {
-          id: 42,
-          path: require("@/assets/events/results/42.jpeg"),
-        },
-        {
-          id: 43,
-          path: require("@/assets/events/results/43.jpeg"),
         },
       ],
     };

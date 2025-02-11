@@ -9,15 +9,15 @@
           >
             Фольклорный фестиваль <br />
             «Троицкие гуляния»
-            <span>23 июня 2024</span>
+            <span>8 июня 2025 года</span>
           </div>
           <div
             @click="openGallery('peschan')"
             :class="['event_popup right', { out: out }]"
           >
             Туристский фестиваль <br />
-            «Песчаная-2024»
-            <span>8-12 июня 2024</span>
+            «Песчаная-2025»
+            <span>11-15 июня 2025 г.</span>
           </div>
           <div
             @click="openGallery('katun')"
@@ -26,7 +26,7 @@
             Всероссийский фестиваль <br />
             традиционной культуры <br />
             «День России на Бирюзовой Катуни»
-            <span>8-12 июня 2024 </span>
+            <span>10-12 июня 2025 года</span>
           </div>
           <div
             @click="openGallery('robert')"
@@ -34,23 +34,7 @@
           >
             Литературный фестиваль <br />
             Роберта Рождественского
-            <span>21-22 июня 2024</span>
-          </div>
-          <div
-            @click="openGallery('ah')"
-            :class="['event_popup left', { out: out }]"
-          >
-            Гастрономический фестиваль <br />
-            «АХ! Фест»
-            <span>29-30 июня 2024</span>
-          </div>
-          <div
-            @click="openGallery('zames')"
-            :class="['event_popup left', { out: out }]"
-          >
-            Гастрономический фестиваль мяса <br />
-            «Мясной замес»
-            <span>июнь 2024</span>
+            <span>20-21 июня 2025 года</span>
           </div>
         </div>
         <div v-else-if="month === 2" class="markers two">
@@ -69,7 +53,7 @@
           >
             Всероссийский фестиваль <br />
             «Шукшинские дни на Алтае»
-            <span>23-27 июля 2024</span>
+            <span>22-26 июля 2025 года</span>
             <div class="star"></div>
           </div>
           <div
@@ -78,7 +62,7 @@
           >
             Музыкальный фестиваль <br />
             Because of the Beatles
-            <span>13 июля 2024</span>
+            <span>Июль 2025 года</span>
           </div>
           <div
             @click="openGallery('wings')"
@@ -125,9 +109,25 @@
             @click="openGallery('sup')"
             :class="['event_popup left', { out: out }]"
           >
-            «SUPряжение» <br />
-            костюмированный заезд на сапбордах
-            <span>20 июля 2024</span>
+            Костюмированный заезд на сапбордах <br />
+            «SUPряжение»
+            <span>28 июня 2025 года</span>
+          </div>
+          <div
+            @click="openGallery('ah')"
+            :class="['event_popup right', { out: out }]"
+          >
+            Гастрономический фестиваль <br />
+            «АХ! Фест»
+            <span>5 июля 2025 года</span>
+          </div>
+          <div
+            @click="openGallery('zames')"
+            :class="['event_popup left', { out: out }]"
+          >
+            Гастрономический фестиваль мяса <br />
+            «Мясной замес»
+            <span>Июль 2025 года</span>
           </div>
         </div>
         <div v-else-if="month === 3" class="markers three">
@@ -138,7 +138,7 @@
             Всероссийский фестиваль <br />
             творчества и спорта им. М.C. Евдокимова <br />
             «Земляки»
-            <span>2-4 августа 2024</span>
+            <span>2 августа 2025 года</span>
           </div>
           <div
             @click="openGallery('cheese')"
@@ -163,7 +163,7 @@
           >
             Семейный гастрономический фестиваль <br />
             «Алтайские бренды. Продукты для здоровья»
-            <span> 24-25 августа 2024</span>
+            <span>Август 2025 года</span>
           </div>
           <div
             @click="openGallery('flashmob')"
@@ -171,7 +171,7 @@
           >
             Всероссийская акция <br />
             «Экскурсионный флешмоб»
-            <span>31 августа 2024</span>
+            <span>30 августа 2025 года</span>
           </div>
           <div
             @click="openGallery('kazak')"
@@ -187,7 +187,15 @@
           >
             Ярмарка натуральной продукции и сельского туризма <br />
             «Солоновские закрома»
-            <span>24 августа 2024</span>
+            <span>30 августа 2025 года</span>
+          </div>
+          <div
+            @click="openGallery('shum')"
+            :class="['event_popup right', { out: out }]"
+          >
+            Музыкальный фестиваль <br />
+            «Шум Катуни»
+            <span>Август 2025 года</span>
           </div>
         </div>
         <div v-else-if="!month" class="markers points">
@@ -251,6 +259,71 @@ export default {
       ],
       list: [],
       allPhotos: {
+        shum: [
+          {
+            id: 1,
+            path: require("@/assets/events/summer/shum/1.jpg"),
+            content: {
+              title: "Музыкальный фестиваль «Шум Катуни»",
+              text: "Музыкальный фестиваль, название которого выбрали жители Алтайского края. Зрители смогут насладиться работой местных диджеев, выступлениями коллективов современных танцев и творчеством региональных музыкальных групп. Кульминацией фестиваля станет выступление специальных гостей.",
+              where: "ОЭЗ ТРТ «Бирюзовая Катунь», Алтайский район",
+              when: "Август 2025 года",
+              link: "шумкатуни.рф",
+            },
+          },
+          {
+            id: 2,
+            path: require("@/assets/events/summer/shum/2.jpg"),
+          },
+          {
+            id: 3,
+            path: require("@/assets/events/summer/shum/3.jpg"),
+          },
+          {
+            id: 4,
+            path: require("@/assets/events/summer/shum/4.jpg"),
+          },
+          {
+            id: 5,
+            path: require("@/assets/events/summer/shum/5.jpg"),
+          },
+          {
+            id: 6,
+            path: require("@/assets/events/summer/shum/6.jpg"),
+          },
+          {
+            id: 7,
+            path: require("@/assets/events/summer/shum/7.jpg"),
+          },
+          {
+            id: 8,
+            path: require("@/assets/events/summer/shum/8.jpg"),
+          },
+          {
+            id: 10,
+            path: require("@/assets/events/summer/shum/10.jpg"),
+          },
+          {
+            id: 11,
+            path: require("@/assets/events/summer/shum/11.jpg"),
+          },
+          {
+            id: 12,
+            path: require("@/assets/events/summer/shum/12.jpg"),
+          },
+          {
+            id: 13,
+            path: require("@/assets/events/summer/shum/13.jpg"),
+          },
+          {
+            id: 14,
+            path: require("@/assets/events/summer/shum/14.jpg"),
+          },
+          {
+            id: 15,
+            path: require("@/assets/events/summer/shum/15.jpg"),
+          },
+        ],
         troitsk: [
           {
             id: 1,
@@ -259,8 +332,8 @@ export default {
               title: "Фольклорный фестиваль «Троицкие гуляния»",
               text: "На фестивале поют обрядовые песни, угощают традиционными кушаниями кержаков, плетут и отправляют по реке венки, проводят женские обряды кумовства и топление березки. Фольклорное шествие и ритуальные обеды за большим столом захватывают участников и гостей праздника.",
               where: "с. Топольное, Солонешенский район",
-              when: "23 июня 2024 года",
-              link: "admsln.narod.ru",
+              when: "8 июня 2025 года",
+              link: "soln-mkc.ru",
             },
           },
           {
@@ -305,8 +378,8 @@ export default {
                 "Всероссийский фестиваль творчества и спорта им. М.C. Евдокимова «Земляки»",
               text: "Программа фестиваля объединяет спортивные и творческие события. В селе проходят творческие встречи с известными артистами и кинорежиссерами и посиделки с участием друзей Михаила Евдокимова. На сельском стадионе разворачивается праздник «С легким паром!». Вечерний концерт начинается с победителей Всероссийского фестиваля народного творчества, а завершается программой звезд российской эстрады.",
               where: "п. Верх-Обский, Смоленский район",
-              when: "2-4 августа 2024 г.",
-              link: "еvdokimov.ru",
+              when: "2 августа 2025 года",
+              link: "ms.evdokimov.ru ",
             },
           },
           {
@@ -348,10 +421,12 @@ export default {
             path: require("@/assets/events/summer/ah/1.jpg"),
             content: {
               title: "Гастрономический фестиваль «АХ! Фест»",
-              text: "Ежегодный гастрономический фестиваль вкуса, еды, развлечений и впечатлений!",
+              text:
+                "Ежегодный гастрономический фестиваль вкуса, еды, развлечений и впечатлений!<br/>" +
+                "Карнавал блюд, дегустации, мастер-классы от шеф-поваров, чайные церемонии и экскурсии – неотъемлемые черты гастрономического события регионального масштаба.<br/>",
               where:
-                "Долина семейного отдыха «Алтайское Холмогорье», с. Алтайское, Алтайский район ",
-              when: "29-30 июня 2024 год",
+                "Долина семейного отдыха «Алтайское Холмогорье», с. Алтайское, Алтайский район",
+              when: "5 июля 2025 года",
               link: "axfest.ru",
             },
           },
@@ -436,10 +511,10 @@ export default {
             content: {
               title:
                 "Семейный гастрономический фестиваль «Алтайские бренды. Продукты для здоровья»",
-              text: "Гастрономический фестиваль, на котором представлены все алтайские производители продуктов: от молочной продукции до меда и фитопродукции! Алтайские Бренды -  это возможность познакомиться с теми, кто ежедневно дарит нам самые полезные и вкусные продукты и товары.",
-              where: "г.Барнаул, ПКиО «Изумрудный»",
-              when: "24-25 августа 2024 года",
-              link: "vk.com/altaybrand22, altaybrand22.ru",
+              text: "Гастрономический фестиваль, на котором представлены все алтайские производители продуктов: от молочной продукции до меда и фитопродукции! Алтайские Бренды – это возможность познакомиться с теми, кто ежедневно дарит нам самые полезные и вкусные продукты и товары.",
+              where: "г. Барнаул, ПКиО «Изумрудный»",
+              when: "Август 2025 года",
+              link: "altaybrand22.ru, vk.com\\altaybrand22 ",
             },
           },
           {
@@ -476,7 +551,7 @@ export default {
                 "Всероссийский фестиваль традиционной культуры «День России на Бирюзовой Катуни»",
               text: "Выставка-ярмарка «Живое ремесло» и презентация этнокультурных объединений Алтайского края, дегустация блюд национальной кухни, мастер-классы по традиционным ремеслам, играм, танцам от национальных коллективов, знакомство с культурой и бытом народов Алтая. Кульминация фестиваля – хороводное шествие фольклорных школ и праздничный концерт.",
               where: "ОЭЗ ТРТ «Бирюзовая Катунь», Алтайский район",
-              when: "8-12 июня 2024 года",
+              when: "10-12 июня 2025 года",
               link: "katun-fest.ru",
             },
           },
@@ -509,78 +584,15 @@ export default {
             path: require("@/assets/events/summer/katun/8.jpg"),
           },
         ],
-        // kultur: [
-        //   {
-        //     id: 1,
-        //     path: require("@/assets/events/summer/kultur/1.jpg"),
-        //     content: {
-        //       title:
-        //         "Межрегиональный фестиваль национальных культур «Перекресток культур» ",
-        //       text: "На фестивале представят изделия народных мастеров и организуют ремесленные мастер-классы, покажут большую концертную программу и обсудят практики сохранения народных традиций на научно-практической конференции. Центральным событием праздника традиционно станет «Фестиваль вареника»",
-        //       where: "г. Славгород",
-        //       when: "5-8 июля 2023 года",
-        //       link: "visitaltai.info",
-        //     },
-        //   },
-        //   {
-        //     id: 2,
-        //     path: require("@/assets/events/summer/kultur/2.jpg"),
-        //   },
-        //   {
-        //     id: 3,
-        //     path: require("@/assets/events/summer/kultur/3.jpg"),
-        //   },
-        //   {
-        //     id: 4,
-        //     path: require("@/assets/events/summer/kultur/4.jpg"),
-        //   },
-        //   {
-        //     id: 5,
-        //     path: require("@/assets/events/summer/kultur/5.jpg"),
-        //   },
-        // ],
-        // zvenigora: [
-        //   {
-        //     id: 1,
-        //     path: require("@/assets/events/summer/zvenigora/1.jpg"),
-        //     content: {
-        //       title: "Международный фестиваль бардовской песни «Звенигора»",
-        //       text: "Несколько сот бардов из Алтайского края, соседних областей, Республики Алтай и Казахстана приезжают в конце лета в палаточный лагерь у озера Колыванского. С вечера до утра лагерь и побережье наполняют вокал и гитарные переборы. Певцов и слушателей угощают ухой и поят душистым травяным чаем. Завершается фестиваль фейерверком, вручением призов всем участникам и концертом.",
-        //       where: "ДОЛ «Чайка», с. Саввушка, Змеиногорский район",
-        //       when: "25-27 августа 2023 года",
-        //       link: "visitaltai.info",
-        //     },
-        //   },
-        //   {
-        //     id: 2,
-        //     path: require("@/assets/events/summer/zvenigora/2.jpg"),
-        //   },
-        //   {
-        //     id: 3,
-        //     path: require("@/assets/events/summer/zvenigora/3.jpg"),
-        //   },
-        //   {
-        //     id: 4,
-        //     path: require("@/assets/events/summer/zvenigora/4.jpg"),
-        //   },
-        //   {
-        //     id: 5,
-        //     path: require("@/assets/events/summer/zvenigora/5.jpg"),
-        //   },
-        //   {
-        //     id: 6,
-        //     path: require("@/assets/events/summer/zvenigora/6.jpg"),
-        //   },
-        // ],
         peschan: [
           {
             id: 1,
             path: require("@/assets/events/summer/peschan/1.jpg"),
             content: {
-              title: "Туристский фестиваль «Песчаная-2024»",
+              title: "Туристский фестиваль «Песчаная-2025»",
               text: "В рамках фестиваля проходят первенства Сибирского федерального округа и края по рафтингу и спортивному туризму на водных дистанциях, краевые соревнования по горному и велотуризму, скалолазанию, мото- и парапланеризму, перетягиванию каната.",
               where: "Урочище «Щеки», р. Песчаная, Смоленский район",
-              when: "8-12 июня 2024 года",
+              when: "11-15 июня 2025 г.",
               link: "vk.com/greataltai",
             },
           },
@@ -633,125 +645,6 @@ export default {
             path: require("@/assets/events/summer/peschan/13.jpg"),
           },
         ],
-        // water: [
-        //   {
-        //     id: 1,
-        //     path: require("@/assets/events/summer/water/1.jpg"),
-        //     content: {
-        //       title:
-        //         "Массовый рекорд по лежанию на открытой воде «Звезда на Яровом»",
-        //       text: "Пляжный праздник, в программе которого – конкурсы, детские и взрослые шоу-программы, спортивные соревнования, вечерний концерт звезд российского шоу-бизнеса. Впечатляющий и дважды вошедший в Книгу рекордов России флешмоб на Яровом объединяет свыше двух тысяч отдыхающих. Они одновременно укладываются в позе «звездочки» на поверхность соленого озера.",
-        //       where: "озеро Большое Яровое, Причал 42, г.Яровое",
-        //       when: "22 июля 2023 г. ",
-        //       link: "moreyarovoe.ru",
-        //     },
-        //   },
-        //   {
-        //     id: 2,
-        //     path: require("@/assets/events/summer/water/2.jpg"),
-        //   },
-        //   {
-        //     id: 3,
-        //     path: require("@/assets/events/summer/water/3.jpg"),
-        //   },
-        //   {
-        //     id: 4,
-        //     path: require("@/assets/events/summer/water/4.jpg"),
-        //   },
-        //   {
-        //     id: 5,
-        //     path: require("@/assets/events/summer/water/5.jpg"),
-        //   },
-        //   {
-        //     id: 6,
-        //     path: require("@/assets/events/summer/water/6.jpg"),
-        //   },
-        //   {
-        //     id: 7,
-        //     path: require("@/assets/events/summer/water/7.jpg"),
-        //   },
-        //   {
-        //     id: 8,
-        //     path: require("@/assets/events/summer/water/8.jpg"),
-        //   },
-        //   {
-        //     id: 9,
-        //     path: require("@/assets/events/summer/water/9.jpg"),
-        //   },
-        //   {
-        //     id: 10,
-        //     path: require("@/assets/events/summer/water/10.jpg"),
-        //   },
-        //   {
-        //     id: 11,
-        //     path: require("@/assets/events/summer/water/11.jpg"),
-        //   },
-        //   {
-        //     id: 12,
-        //     path: require("@/assets/events/summer/water/12.jpg"),
-        //   },
-        //   {
-        //     id: 13,
-        //     path: require("@/assets/events/summer/water/13.jpg"),
-        //   },
-        //   {
-        //     id: 14,
-        //     path: require("@/assets/events/summer/water/14.jpg"),
-        //   },
-        // ],
-        // wings: [
-        //   {
-        //     id: 1,
-        //     path: require("@/assets/events/summer/wings/1.jpg"),
-        //     content: {
-        //       title: "Авиамодельный фестиваль «Крылья Сибири»",
-        //       text: "Гости фестиваля смогут посетить выставку летательных аппаратов, увидеть показательные выступления парамотористов и шоу пилотажной группы. Фестиваль завершает большая концертная программа.",
-        //       where: "с. Ребриха, Ребрихинский район",
-        //       when: "22 июля 2023 г. ",
-        //       link: "visitaltai.info",
-        //     },
-        //   },
-        //   {
-        //     id: 2,
-        //     path: require("@/assets/events/summer/wings/2.jpg"),
-        //   },
-        //   {
-        //     id: 3,
-        //     path: require("@/assets/events/summer/wings/3.jpg"),
-        //   },
-        //   {
-        //     id: 4,
-        //     path: require("@/assets/events/summer/wings/4.jpg"),
-        //   },
-        //   {
-        //     id: 5,
-        //     path: require("@/assets/events/summer/wings/5.jpg"),
-        //   },
-        //   {
-        //     id: 6,
-        //     path: require("@/assets/events/summer/wings/6.jpg"),
-        //   },
-        //   {
-        //     id: 7,
-        //     path: require("@/assets/events/summer/wings/7.jpg"),
-        //   },
-        //   {
-        //     id: 8,
-        //     path: require("@/assets/events/summer/wings/8.jpg"),
-        //   },
-        //   {
-        //     id: 9,
-        //     path: require("@/assets/events/summer/wings/9.jpg"),
-        //   },
-        //   {
-        //     id: 10,
-        //     path: require("@/assets/events/summer/wings/10.jpg"),
-        //   },
-        //   {
-        //     id: 11,
-        //     path: require("@/assets/events/summer/wings/11.jpg"),
-        //   },
-        // ],
         robert: [
           {
             id: 1,
@@ -759,8 +652,8 @@ export default {
             content: {
               title: "Литературный фестиваль Роберта Рождественского",
               text: "Разножанровый и мультикультурный фестиваль объединяет поэтические выступления известных литераторов и экскурсии по мемориальному музею поэта и районному краеведческому, фольклорный и рок-фестивали, дегустации национальных кухонь и ярмарку ремесленников в березовой роще на Яру любви. Для детей работают игровая площадка и аттракционы.",
-              where: "с. Косиха (Косихинский район), г.Барнаул",
-              when: "21-22 июня 2024 года",
+              where: "с. Косиха (Косихинский район)",
+              when: "20-21 июня 2025 года",
               link: "culture22.ru",
             },
           },
@@ -816,6 +709,18 @@ export default {
             id: 14,
             path: require("@/assets/events/summer/robert/14.jpg"),
           },
+          {
+            id: 15,
+            path: require("@/assets/events/summer/robert/15.jpg"),
+          },
+          {
+            id: 16,
+            path: require("@/assets/events/summer/robert/16.jpg"),
+          },
+          {
+            id: 17,
+            path: require("@/assets/events/summer/robert/17.jpg"),
+          },
         ],
         shukshi: [
           {
@@ -824,8 +729,8 @@ export default {
             content: {
               title: "Всероссийский фестиваль «Шукшинские дни на Алтае»",
               text: "Программа фестиваля включает не только литературные встречи и кинофестиваль, но и народные гуляния. Наиболее плотно и ярко чествование памяти земляка проходит на его малой родине – в селе Сростки, во Всероссийском мемориальном музее-заповеднике В.М. Шукшина. В последний день в селе проходит ремесленная ярмарка и народные гуляния. Кульминацией является художественная программа на горе Пикет у памятника Василия Макаровича.",
-              where: "г. Барнаул, с. Сростки, Бийский район",
-              when: "23-27 июля 2024 года",
+              where: "г. Барнаул, г. Бийск, с. Сростки, Бийский район",
+              when: "22-26 июля 2025 года",
               link: "culture22.ru",
             },
           },
@@ -889,6 +794,18 @@ export default {
             id: 16,
             path: require("@/assets/events/summer/shukshi/16.jpg"),
           },
+          {
+            id: 17,
+            path: require("@/assets/events/summer/shukshi/17.jpg"),
+          },
+          {
+            id: 18,
+            path: require("@/assets/events/summer/shukshi/18.jpg"),
+          },
+          {
+            id: 19,
+            path: require("@/assets/events/summer/shukshi/19.jpg"),
+          },
         ],
         beatles: [
           {
@@ -896,10 +813,10 @@ export default {
             path: require("@/assets/events/summer/beatles/12.jpg"),
             content: {
               title: "Музыкальный фестиваль Because of the Beatles",
-              text: "Кавер-версии хитов  «The Beatles» исполняют вживую в разных стилях и жанрах: на главную сцену «Бирюзовой Катуни» выходят сибирские рокеры и джазмены – больше десятка групп из нескольких городов России. Организаторам события удается создать неповторимую атмосферу 1960-х годов для любителей и поклонников творчества «Ливерпульской четверки»",
+              text: "Кавер-версии хитов «The Beatles» исполняют вживую в разных стилях и жанрах: на главную сцену «Бирюзовой Катуни» выходят сибирские рокеры и джазмены – больше десятка групп из нескольких городов России. Организаторам события удается создать неповторимую атмосферу 1960-х годов для любителей и поклонников творчества «Ливерпульской четверки»",
               where: "ОЭЗ ТРТ «Бирюзовая Катунь», Алтайский район",
-              when: "13 июля 2024 года",
-              link: "beatlesfest22.ru",
+              when: "Июль 2025 года",
+              link: "vk.com/beatlesfest22 ",
             },
           },
           {
@@ -947,44 +864,6 @@ export default {
             path: require("@/assets/events/summer/beatles/1.jpg"),
           },
         ],
-        // krepost: [
-        //   {
-        //     id: 1,
-        //     path: require("@/assets/events/summer/krepost/1.jpg"),
-        //     content: {
-        //       title:
-        //         "Фестиваль военно-исторической реконструкции «Белоярская крепость»",
-        //       text: "На площадке события организуют интерактивные мультиисторические зоны – ремесленную, гастрономическую и тактическую. Гости фестиваля окунутся в достоверно воссозданный быт минувших веков. Они смогут участвовать в работе гончарной мастерской, стрелять из лука, осваивать технику мечевого боя и наблюдать за средневековыми сражениями реконструкторов из Алтайского края и соседних регионов.",
-        //       where: "Чуйский тракт,205 км., Первомайский район",
-        //       when: "июль 2022 г. ",
-        //       link: "instagram.com/beloyarskaya_krepost/",
-        //     },
-        //   },
-        //   {
-        //     id: 2,
-        //     path: require("@/assets/events/summer/krepost/2.jpg"),
-        //   },
-        //   {
-        //     id: 3,
-        //     path: require("@/assets/events/summer/krepost/3.jpg"),
-        //   },
-        //   {
-        //     id: 4,
-        //     path: require("@/assets/events/summer/krepost/4.jpg"),
-        //   },
-        //   {
-        //     id: 5,
-        //     path: require("@/assets/events/summer/krepost/5.jpg"),
-        //   },
-        //   {
-        //     id: 6,
-        //     path: require("@/assets/events/summer/krepost/6.jpg"),
-        //   },
-        //   {
-        //     id: 7,
-        //     path: require("@/assets/events/summer/krepost/7.jpg"),
-        //   },
-        // ],
         flashmob: [
           {
             id: 1,
@@ -993,8 +872,8 @@ export default {
               title: "Всероссийская акция «Экскурсионный флешмоб»",
               text: "Акция для всех, кто интересуется историей и жизнью края. В единый день и единое время стартует множество бесплатных экскурсий, лекций, мастер-классов и творческих встреч.",
               where: "Алтайский край",
-              when: "31 августа 2024 года",
-              link: "excursmob.ru",
+              when: "30 августа 2025 года",
+              link: "visitaltai.info",
             },
           },
           {
@@ -1042,40 +921,6 @@ export default {
             path: require("@/assets/events/summer/flashmob/12.jpg"),
           },
         ],
-        // kazak: [
-        //   {
-        //     id: 1,
-        //     path: require("@/assets/events/summer/kazak/1.jpg"),
-        //     content: {
-        //       title:
-        //         "Открытые международные казачьи игры «Шермиции на Сибирской земле»",
-        //       text: "Зрители увидят рубку папах и фехтование клинками, метание кинжалов, казачий и рукопашный бой. В рамках игровой программы гости шермиций участвуют в мастер-классах, сдают нормы ГТО, знакомятся с выставкой казачьего оружия и предметов казачьего быта. Праздничный настрой участников и зрителей поддерживают казачьи песни и мелодии военно-духовного оркестра.",
-        //       where: "с. Павловск (Павловский район)",
-        //       when: "август 2023 года",
-        //       link: "vk.com/kazaki22",
-        //     },
-        //   },
-        //   {
-        //     id: 2,
-        //     path: require("@/assets/events/summer/kazak/2.jpg"),
-        //   },
-        //   {
-        //     id: 3,
-        //     path: require("@/assets/events/summer/kazak/3.jpg"),
-        //   },
-        //   {
-        //     id: 4,
-        //     path: require("@/assets/events/summer/kazak/4.jpg"),
-        //   },
-        //   {
-        //     id: 5,
-        //     path: require("@/assets/events/summer/kazak/5.jpg"),
-        //   },
-        //   {
-        //     id: 6,
-        //     path: require("@/assets/events/summer/kazak/6.jpg"),
-        //   },
-        // ],
         maso: [
           {
             id: 1,
@@ -1135,10 +980,10 @@ export default {
             id: 1,
             path: require("@/assets/events/summer/sup/1.jpg"),
             content: {
-              title: "«SUPряжение» костюмированный заезд на сапбордах",
+              title: "Костюмированный заезд на сапбордах «SUPряжение»",
               text: "Костюмированный заезд на дистанцию 1250 метров от пляжа Гребного канала и обратно. Для создания конкурсного образа можно использовать декорации не только в одежде рейдера, но и украшать сам сапборд. Автор самого выразительного костюма определяется по итогам аплодисментов зрителей.",
-              where: "Алтайский край",
-              when: "20 июля 2024",
+              where: "г. Яровое",
+              when: "28 июня 2025 года",
               link: "visitaltai.info",
             },
           },
@@ -1150,6 +995,34 @@ export default {
             id: 3,
             path: require("@/assets/events/summer/sup/3.jpg"),
           },
+          {
+            id: 4,
+            path: require("@/assets/events/summer/sup/4.jpg"),
+          },
+          {
+            id: 5,
+            path: require("@/assets/events/summer/sup/5.jpg"),
+          },
+          {
+            id: 6,
+            path: require("@/assets/events/summer/sup/6.jpg"),
+          },
+          {
+            id: 7,
+            path: require("@/assets/events/summer/sup/7.jpg"),
+          },
+          {
+            id: 8,
+            path: require("@/assets/events/summer/sup/8.jpg"),
+          },
+          {
+            id: 9,
+            path: require("@/assets/events/summer/sup/9.jpg"),
+          },
+          {
+            id: 10,
+            path: require("@/assets/events/summer/sup/10.jpg"),
+          },
         ],
         zakroma: [
           {
@@ -1159,9 +1032,9 @@ export default {
               title:
                 "Ярмарка натуральной продукции и сельского туризма «Солоновские закрома»",
               text: "Фрукты, овощи, мясная и молочная продукция, предгорный мед с личных и фермерских подсобных хозяйств – все это ждет посетителей ярмарки. Кроме того, здесь можно приобрести саженцы и семена местных и приглашенных селекционеров, изделия народных умельцев, а также поучаствовать в дегустациях и мастер-классах.",
-              where: "с. Солоновка Алтайский край",
-              when: "24 августа 2024 года",
-              link: "altay-solonovka.ru",
+              where: "с. Солоновка, Смоленский район",
+              when: "30 августа 2025 года",
+              link: "altay-solonovka.ru/solonovskiezakroma ",
             },
           },
           {
@@ -1388,42 +1261,6 @@ export default {
       transform: rotate(-124deg);
     }
   }
-
-  .event_popup:nth-child(5) {
-    right: 30px;
-    top: 360px;
-    animation-delay: 0.2s;
-
-    &:before {
-      left: 51px;
-      bottom: -83px;
-    }
-
-    &:after {
-      height: 77px;
-      left: 104px;
-      top: 130px;
-      transform: rotate(-137deg);
-    }
-  }
-
-  .event_popup:nth-child(6) {
-    top: 117px;
-    left: 703px;
-    animation-delay: 0.3s;
-
-    &:before {
-      right: -156px;
-      top: 145px;
-    }
-
-    &:after {
-      height: 143px;
-      right: -64px;
-      bottom: -57px;
-      transform: rotate(116deg);
-    }
-  }
 }
 
 .two {
@@ -1565,6 +1402,7 @@ export default {
   .event_popup:nth-child(7) {
     top: 460px;
     left: 741px;
+    display: none;
 
     &:before {
       right: -346px;
@@ -1582,6 +1420,7 @@ export default {
   .event_popup:nth-child(8) {
     top: 460px;
     left: 741px;
+    display: none;
 
     &:before {
       right: -157px;
@@ -1614,6 +1453,43 @@ export default {
       transform: rotate(102deg);
     }
   }
+
+  .event_popup:nth-child(10) {
+    right: 430px;
+    top: 504px;
+    animation-delay: 0.2s;
+
+    &:before {
+      left: 471px;
+      bottom: 63px;
+    }
+
+    &:after {
+      height: 132px;
+      left: 417px;
+      top: -20px;
+      transform: rotate(-73deg);
+    }
+  }
+
+  .event_popup:nth-child(11) {
+    top: 348px;
+    left: 703px;
+    animation-delay: 0.3s;
+
+    &:before {
+      display: none;
+      right: -156px;
+      top: 145px;
+    }
+
+    &:after {
+      height: 220px;
+      right: -46px;
+      bottom: 44px;
+      transform: rotate(70deg);
+    }
+  }
 }
 
 .three {
@@ -1638,6 +1514,7 @@ export default {
     right: 251px;
     top: 700px;
     animation-delay: 0.2s;
+    display: none;
 
     &:before {
       left: 147px;
@@ -1733,6 +1610,24 @@ export default {
       right: 10px;
       bottom: -77px;
       transform: rotate(-25deg);
+    }
+  }
+
+  .event_popup:nth-child(8) {
+    bottom: 35px;
+    right: 60px;
+    animation-delay: 0.4s;
+
+    &:before {
+      top: -75px;
+      left: 52px;
+    }
+
+    &:after {
+      height: 102px;
+      left: 122px;
+      bottom: 105px;
+      transform: rotate(-45deg);
     }
   }
 }
