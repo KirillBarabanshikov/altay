@@ -36,6 +36,14 @@
             Роберта Рождественского
             <span>20-21 июня 2025 года</span>
           </div>
+          <div
+            @click="openGallery('sup')"
+            :class="['event_popup left', { out: out }]"
+          >
+            Костюмированный заезд на сапбордах <br />
+            «SUPряжение»
+            <span>28 июня 2025 года</span>
+          </div>
         </div>
         <div v-else-if="month === 2" class="markers two">
           <div
@@ -1261,6 +1269,23 @@ export default {
       transform: rotate(-124deg);
     }
   }
+
+  .event_popup:nth-child(5) {
+    top: 160px;
+    left: 641px;
+
+    &:before {
+      right: -188px;
+      top: 104px;
+    }
+
+    &:after {
+      height: 175px;
+      right: -88px;
+      bottom: -58px;
+      transform: rotate(102deg);
+    }
+  }
 }
 
 .two {
@@ -1439,6 +1464,7 @@ export default {
   .event_popup:nth-child(9) {
     top: 160px;
     left: 641px;
+    display: none;
 
     &:before {
       right: -157px;

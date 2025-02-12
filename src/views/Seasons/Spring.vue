@@ -11,14 +11,6 @@
             «VISIT ALTAI»
             <span>11-13 апреля 2023</span>
           </div>
-          <div
-            @click="openGallery('moralnik')"
-            :class="['event_popup right', { out: out }]"
-          >
-            Фестиваль <br />
-            «Цветение маральника»
-            <span>1 мая 2025 года</span>
-          </div>
         </div>
         <div v-else-if="month === 2" class="markers two">
           <div
@@ -36,6 +28,14 @@
             Ежегодная всероссийская акция <br />
             «Ночь музеев»
             <span>17 мая 2025 года</span>
+          </div>
+          <div
+            @click="openGallery('moralnik')"
+            :class="['event_popup right', { out: out }]"
+          >
+            Фестиваль <br />
+            «Цветение маральника»
+            <span>1 мая 2025 года</span>
           </div>
         </div>
         <div v-else-if="month === 3" class="markers three">
@@ -69,7 +69,7 @@
         :events-list="eventsList"
         @back="back"
         @changeMonth="changeMonth"
-        three
+        two
       />
     </div>
     <transition name="fade">
@@ -99,10 +99,10 @@ export default {
           id: 3,
           title: "Март",
         },
-        {
-          id: 1,
-          title: "Апрель",
-        },
+        // {
+        //   id: 1,
+        //   title: "Апрель",
+        // },
         {
           id: 2,
           title: "Май",
@@ -460,23 +460,6 @@ export default {
       transform: rotate(-45deg);
     }
   }
-
-  .event_popup:nth-child(2) {
-    bottom: 35px;
-    right: 60px;
-
-    &:before {
-      top: -75px;
-      left: 52px;
-    }
-
-    &:after {
-      height: 102px;
-      left: 122px;
-      bottom: 105px;
-      transform: rotate(-45deg);
-    }
-  }
 }
 
 .two {
@@ -512,6 +495,23 @@ export default {
       height: 170px;
       right: 51px;
       bottom: -141px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .event_popup:nth-child(3) {
+    bottom: 35px;
+    right: 60px;
+
+    &:before {
+      top: -75px;
+      left: 52px;
+    }
+
+    &:after {
+      height: 102px;
+      left: 122px;
+      bottom: 105px;
       transform: rotate(-45deg);
     }
   }
