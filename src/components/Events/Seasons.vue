@@ -33,163 +33,163 @@ export default {
       list: [
         {
           id: 0,
-          path: require("@/assets/events/results/0.jpeg"),
+          path: require("@/assets/events/results/0.jpg"),
         },
         {
           id: 1,
-          path: require("@/assets/events/results/1.jpeg"),
+          path: require("@/assets/events/results/1.jpg"),
         },
         {
           id: 2,
-          path: require("@/assets/events/results/2.jpeg"),
+          path: require("@/assets/events/results/2.jpg"),
         },
         {
           id: 3,
-          path: require("@/assets/events/results/3.jpeg"),
+          path: require("@/assets/events/results/3.jpg"),
         },
         {
           id: 4,
-          path: require("@/assets/events/results/4.jpeg"),
+          path: require("@/assets/events/results/4.jpg"),
         },
         {
           id: 5,
-          path: require("@/assets/events/results/5.jpeg"),
+          path: require("@/assets/events/results/5.jpg"),
         },
         {
           id: 6,
-          path: require("@/assets/events/results/6.jpeg"),
+          path: require("@/assets/events/results/6.jpg"),
         },
         {
           id: 7,
-          path: require("@/assets/events/results/7.jpeg"),
+          path: require("@/assets/events/results/7.jpg"),
         },
         {
           id: 8,
-          path: require("@/assets/events/results/8.jpeg"),
+          path: require("@/assets/events/results/8.jpg"),
         },
         {
           id: 9,
-          path: require("@/assets/events/results/9.jpeg"),
+          path: require("@/assets/events/results/9.jpg"),
         },
         {
           id: 10,
-          path: require("@/assets/events/results/10.jpeg"),
+          path: require("@/assets/events/results/10.jpg"),
         },
         {
           id: 11,
-          path: require("@/assets/events/results/11.jpeg"),
+          path: require("@/assets/events/results/11.jpg"),
         },
         {
           id: 12,
-          path: require("@/assets/events/results/12.jpeg"),
+          path: require("@/assets/events/results/12.jpg"),
         },
         {
           id: 13,
-          path: require("@/assets/events/results/13.jpeg"),
+          path: require("@/assets/events/results/13.jpg"),
         },
         {
           id: 14,
-          path: require("@/assets/events/results/14.jpeg"),
+          path: require("@/assets/events/results/14.jpg"),
         },
         {
           id: 15,
-          path: require("@/assets/events/results/15.jpeg"),
+          path: require("@/assets/events/results/15.jpg"),
         },
         {
           id: 16,
-          path: require("@/assets/events/results/16.jpeg"),
+          path: require("@/assets/events/results/16.jpg"),
         },
         {
           id: 17,
-          path: require("@/assets/events/results/17.jpeg"),
+          path: require("@/assets/events/results/17.jpg"),
         },
         {
           id: 18,
-          path: require("@/assets/events/results/18.jpeg"),
+          path: require("@/assets/events/results/18.jpg"),
         },
         {
           id: 19,
-          path: require("@/assets/events/results/19.jpeg"),
+          path: require("@/assets/events/results/19.jpg"),
         },
         {
           id: 20,
-          path: require("@/assets/events/results/20.jpeg"),
+          path: require("@/assets/events/results/20.jpg"),
         },
         {
           id: 21,
-          path: require("@/assets/events/results/21.jpeg"),
+          path: require("@/assets/events/results/21.jpg"),
         },
         {
           id: 22,
-          path: require("@/assets/events/results/22.jpeg"),
+          path: require("@/assets/events/results/22.jpg"),
         },
         {
           id: 23,
-          path: require("@/assets/events/results/23.jpeg"),
+          path: require("@/assets/events/results/23.jpg"),
         },
         {
           id: 24,
-          path: require("@/assets/events/results/24.jpeg"),
+          path: require("@/assets/events/results/24.jpg"),
         },
         {
           id: 25,
-          path: require("@/assets/events/results/25.jpeg"),
+          path: require("@/assets/events/results/25.jpg"),
         },
         {
           id: 26,
-          path: require("@/assets/events/results/26.jpeg"),
+          path: require("@/assets/events/results/26.jpg"),
         },
         {
           id: 27,
-          path: require("@/assets/events/results/27.jpeg"),
+          path: require("@/assets/events/results/27.jpg"),
         },
         {
           id: 28,
-          path: require("@/assets/events/results/28.jpeg"),
+          path: require("@/assets/events/results/28.jpg"),
         },
         {
           id: 29,
-          path: require("@/assets/events/results/29.jpeg"),
+          path: require("@/assets/events/results/29.jpg"),
         },
         {
           id: 30,
-          path: require("@/assets/events/results/30.jpeg"),
+          path: require("@/assets/events/results/30.jpg"),
         },
         {
           id: 31,
-          path: require("@/assets/events/results/31.jpeg"),
+          path: require("@/assets/events/results/31.jpg"),
         },
         {
           id: 32,
-          path: require("@/assets/events/results/32.jpeg"),
+          path: require("@/assets/events/results/32.jpg"),
         },
         {
           id: 33,
-          path: require("@/assets/events/results/33.jpeg"),
+          path: require("@/assets/events/results/33.jpg"),
         },
         {
           id: 34,
-          path: require("@/assets/events/results/34.jpeg"),
+          path: require("@/assets/events/results/34.jpg"),
         },
         {
           id: 35,
-          path: require("@/assets/events/results/35.jpeg"),
+          path: require("@/assets/events/results/35.jpg"),
         },
         {
           id: 36,
-          path: require("@/assets/events/results/36.jpeg"),
+          path: require("@/assets/events/results/36.jpg"),
         },
         {
           id: 37,
-          path: require("@/assets/events/results/37.jpeg"),
+          path: require("@/assets/events/results/37.jpg"),
         },
         {
           id: 38,
-          path: require("@/assets/events/results/38.jpeg"),
+          path: require("@/assets/events/results/38.jpg"),
         },
         {
           id: 39,
-          path: require("@/assets/events/results/39.jpeg"),
+          path: require("@/assets/events/results/39.jpg"),
         },
       ],
     };

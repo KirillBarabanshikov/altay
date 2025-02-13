@@ -7,7 +7,7 @@
             @click="openGallery('zimovka')"
             :class="['event_popup left', { out: out }]"
           >
-            Праздник <br />
+            Фестиваль <br />
             «Алтайская зимовка»
             <span>13 декабря 2025 года</span>
           </div>
