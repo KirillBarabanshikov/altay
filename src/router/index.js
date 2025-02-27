@@ -15,6 +15,7 @@ import ComplexDashboard from "@/views/Complex/ComplexDashboard.vue";
 import Routes from "@/views/Routes.vue";
 import Vkusno from "@/views/Vkusno.vue";
 import Sanatoriums from "@/views/Complex/Sanatoriums.vue";
+import Wow from "@/views/Wow.vue";
 
 const routes = [
   {
@@ -96,6 +97,11 @@ const routes = [
     path: "/vkusno",
     name: "vkusno",
     component: Vkusno,
+  },
+  {
+    path: "/wow",
+    name: "wow",
+    component: Wow,
   },
 ];
 

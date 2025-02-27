@@ -78,6 +78,11 @@ export default {
           id: 8,
           title: 'А - ЭТО ГДЕ ИСТОРИЯ и современность',
           path: 'history'
+        },
+        {
+          id: 9,
+          title: 'алтай в годы великой отечественной войны',
+          path: 'wow'
         }
 
       ]
@@ -105,17 +110,19 @@ export default {
 @import "@/assets/scss/fonts.scss";
 
 .events {
-  padding: 0 50px;
+  padding: 0 32px;
   display: flex;
-  gap: 19px;
+  gap: 17px;
 }
 
 .event {
-  width: 185px;
-  height: 133px;
+  width: 170px;
+  height: 123px;
   display: flex;
   padding: 20px 10px;
+  border-radius: 50px;
   justify-content: center;
+  align-items: center;
   font-size: 22px;
   line-height: 28px;
   text-align: center;
