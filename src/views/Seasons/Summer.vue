@@ -38,7 +38,7 @@
           </div>
           <div
             @click="openGallery('sup')"
-            :class="['event_popup left', { out: out }]"
+            :class="['event_popup right', { out: out }]"
           >
             Костюмированный заезд на сапбордах <br />
             «SUPряжение»
@@ -70,7 +70,7 @@
           >
             Музыкальный фестиваль <br />
             Because of the Beatles
-            <span>12 июля 2025 года</span>
+            <span>19 июля 2025 года</span>
           </div>
           <div
             @click="openGallery('wings')"
@@ -136,6 +136,7 @@
             Гастрономический фестиваль мяса <br />
             «Мясной замес»
             <span>Июль 2025 года</span>
+            <div class="star-meat"></div>
           </div>
         </div>
         <div v-else-if="month === 3" class="markers three">
@@ -823,7 +824,7 @@ export default {
               title: "Музыкальный фестиваль Because of the Beatles",
               text: "Кавер-версии хитов «The Beatles» исполняют вживую в разных стилях и жанрах: на главную сцену «Бирюзовой Катуни» выходят сибирские рокеры и джазмены – больше десятка групп из нескольких городов России. Организаторам события удается создать неповторимую атмосферу 1960-х годов для любителей и поклонников творчества «Ливерпульской четверки»",
               where: "ОЭЗ ТРТ «Бирюзовая Катунь», Алтайский район",
-              when: "12 июля 2025 года",
+              when: "19 июля 2025 года",
               link: "vk.com/beatlesfest22 ",
             },
           },
@@ -1275,15 +1276,15 @@ export default {
     left: 641px;
 
     &:before {
-      right: -188px;
-      top: 104px;
+      left: -472px;
+      top: 212px;
     }
 
     &:after {
-      height: 175px;
-      right: -88px;
-      bottom: -58px;
-      transform: rotate(102deg);
+      height: 450px;
+      right: 655px;
+      bottom: -247px;
+      transform: rotate(74deg);
     }
   }
 }
@@ -1310,19 +1311,19 @@ export default {
 
   .event_popup:nth-child(2) {
     right: 23px;
-    top: 287px;
+    top: 92px;
     animation-delay: 0.2s;
 
     &:before {
       left: 51px;
-      bottom: -83px;
+      bottom: -280px;
     }
 
     &:after {
-      height: 77px;
-      left: 104px;
-      top: 130px;
-      transform: rotate(-137deg);
+      height: 270px;
+      left: 131px;
+      top: 134px;
+      transform: rotate(-157deg);
     }
 
     .star {
@@ -1332,7 +1333,7 @@ export default {
       height: 48px;
       background: url("@/assets/img/icons/star.svg") center / cover no-repeat;
       position: absolute;
-      top: -13px;
+      top: 184px;
       left: -260px;
       z-index: 3;
 
@@ -1344,8 +1345,8 @@ export default {
         background: #fff;
         height: 247px;
         left: 146px;
-        top: -50px;
-        transform: rotate(-68deg);
+        top: -139px;
+        transform: rotate(-111deg);
       }
     }
   }
@@ -1500,7 +1501,7 @@ export default {
 
   .event_popup:nth-child(11) {
     top: 348px;
-    left: 703px;
+    left: 696px;
     animation-delay: 0.3s;
 
     &:before {
@@ -1509,11 +1510,35 @@ export default {
       top: 145px;
     }
 
-    &:after {
-      height: 220px;
-      right: -46px;
-      bottom: 44px;
-      transform: rotate(70deg);
+    //&:after {
+    //  height: 220px;
+    //  right: -46px;
+    //  bottom: 44px;
+    //  transform: rotate(70deg);
+    //}
+
+    .star-meat {
+      content: "";
+      display: block;
+      width: 48px;
+      height: 48px;
+      background: url("@/assets/img/icons/star.svg") center / cover no-repeat;
+      position: absolute;
+      top: -57px;
+      left: 848px;
+      z-index: 3;
+
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 5px;
+        background: #fff;
+        height: 468px;
+        left: -219px;
+        top: -148px;
+        transform: rotate(-104deg);
+      }
     }
   }
 }
