@@ -224,6 +224,8 @@
           <div class="marker"></div>
           <div class="marker"></div>
           <div class="marker"></div>
+          <div class="marker"></div>
+          <div class="marker"></div>
         </div>
       </transition>
     </div>
@@ -1196,6 +1198,18 @@ export default {
     top: 387px;
     left: 1416px;
     animation-delay: 0.1s;
+  }
+
+  .marker:nth-child(17) {
+    top: 342px;
+    left: 163px;
+    animation-delay: 0.1s;
+  }
+
+  .marker:nth-child(18) {
+    top: 270px;
+    left: 1537px;
+    animation-delay: 0.4s;
   }
 }
 
